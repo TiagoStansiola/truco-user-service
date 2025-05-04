@@ -15,7 +15,6 @@ import java.util.Optional;
 public class UserAccountController {
 
     private static final String PROFILE = "/profile";
-    private static final String STATS = "/stats";
 
     private final UserAccountService userAccountService;
 
@@ -27,11 +26,4 @@ public class UserAccountController {
     public ResponseEntity<Optional<UserAccountDto>> getUserProfile(@RequestParam String id) {
         return ResponseEntity.ok(userAccountService.getUserAccountById(id));
     }
-
-
-    @GetMapping(path = STATS)
-    public void getStatsGames(String id){
-
-    }
-
 }
