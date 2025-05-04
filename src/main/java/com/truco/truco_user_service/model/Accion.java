@@ -1,0 +1,7 @@
+package com.truco.truco_user_service.model;
+
+public enum Accion {
+
+    ENVIDO,ENVIDO_ENVIDO,ENVIDO_REALENVIDO,ENVIDO_ENVIDO_REALENVIDO,REALENVIDO,TRUCO,RETRUCO,VALECUATRO
+
+}

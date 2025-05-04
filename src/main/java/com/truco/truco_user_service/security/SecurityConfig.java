@@ -24,7 +24,7 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         String[] allowedPaths = {
-                "/", "/user/profile", "/user/register",
+                "/", "/user/profile", "/user/register","/user/history",
                 "/swagger-ui/**", "/v3/api-docs", "/swagger-resources/**", "/webjars/**"
         };
 

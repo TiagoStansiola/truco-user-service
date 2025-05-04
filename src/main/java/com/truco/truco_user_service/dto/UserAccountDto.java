@@ -2,7 +2,6 @@ package com.truco.truco_user_service.dto;
 
 import com.truco.truco_user_service.model.UserAccount;
 import lombok.*;
-import org.springframework.data.annotation.Id;
 
 @Data
 @Builder

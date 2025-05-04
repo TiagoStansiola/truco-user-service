@@ -2,7 +2,6 @@ package com.truco.truco_user_service.controller;
 
 import com.truco.truco_user_service.dto.UserAccountDto;
 import com.truco.truco_user_service.service.UserAccountService;
-
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +15,6 @@ import java.util.Optional;
 public class UserAccountController {
 
     private static final String PROFILE = "/profile";
-    private static final String HISTORY = "/history";
     private static final String STATS = "/stats";
 
     private final UserAccountService userAccountService;
@@ -29,10 +27,7 @@ public class UserAccountController {
     public ResponseEntity<Optional<UserAccountDto>> getUserProfile(@RequestParam String id) {
         return ResponseEntity.ok(userAccountService.getUserAccountById(id));
     }
-    @GetMapping(path = HISTORY)
-    public void getHistoryGames(String id){
 
-    }
 
     @GetMapping(path = STATS)
     public void getStatsGames(String id){
