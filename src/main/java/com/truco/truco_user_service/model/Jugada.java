@@ -1,5 +1,6 @@
 package com.truco.truco_user_service.model;
 
+import com.truco.truco_user_service.enums.Accion;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

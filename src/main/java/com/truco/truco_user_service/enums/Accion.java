@@ -1,4 +1,4 @@
-package com.truco.truco_user_service.model;
+package com.truco.truco_user_service.enums;
 
 public enum Accion {
 
